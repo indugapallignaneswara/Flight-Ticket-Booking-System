@@ -30,4 +30,56 @@ Ram: - 4 gb or above
 Storage: - 64 gb or above
 Required Software: -
 System software: - Windows 7 or more /mac os
-Compiler: - Dev c++/Code blocks/Vs code 
+Compiler: - Dev c++/Code blocks/Vs code .
+
+
+
+
+
+
+Algorithm
+Step 1: start
+
+Step 2: select a desired service
+
+1. reservation
+2. cancellation or reschedule
+3.booking details
+4. records
+5. exit
+If choice is 1 goto step 3, step 7 for choice 2, step 10 for choice 3, step 11 for choice 4, step 12 for choice 5.
+
+Step 3: enter source and destination details, travel date, desired Seat class, no. of persons.
+
+Step 4: select the airlines
+1. Air india
+2. Indigo
+3.Vistara
+4.Trujet
+5.Go air
+6.Spicejet
+Step 5: Select the required plane. If the seats are available
+ goto step 6, else goto step 5
+ 
+Step 6: enter the details the passengers.
+ Display the amount to be paid.
+ Display the ticket.
+ 
+Step 7: select required category
+ 1. Rescheduling.
+ 2. Cancelation.
+ 3. main menu
+  
+ If choice is 1 goto step 8, goto step 9 for choice 2,
+ goto step 2 for choice 3.
+ 
+Step 8: enter your name, number of seats, seat number. Select the new date and time you wish to change. Display the ticket with rescheduled date and time.
+ 
+Step 9: enter your name, number of seats, seat number. Display the message
+ 
+Step 10: enter your name.
+ Display the booking details.
+ 
+Step 11: display the previous records
+
+Step 12: stop
