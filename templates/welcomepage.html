@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home Page</title>
+    <style>
+        .lg {
+            color: rgba(165, 88, 21, 0.902);
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            padding: 10px 5px;
+            background-color: rgb(221, 231, 238);
+            padding-top: 16px;
+            border-radius: 20px;
+            float: left;
+        }
+        
+        .loginbox {
+            width: 190px;
+            height: 120px;
+            background: #3f11a2;
+            color: #5aca4b;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+           
+            padding: 60px 50px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: rgb(16, 1, 1);
+        }
+        
+        form {
+            border: 0px solid #f1f1f1;
+            width: 40%;
+            height: 40%;
+            padding: 40px;
+        }
+        
+        body {
+            background-image: url('{% static "authentication/background.jpg"%}');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+        h1 {
+            margin: 0;
+            padding: 0 0 20px;
+            text-align: center;
+            font-size: 32px;
+            color: rgb(5, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <center>
+        <br><br><br><br><br><br>
+        <h1>Welcome To Airlines ticket booking system</h1>
+        <br><br><br><br><br><br>
+        <form class="loginbox">
+            <a href="/signin" class="lg">Login</a>
+            <a href="/signup" class="lg">I am New</a><br><br><br>
+            <script src="" async defer></script>
+
+
+        </form>
+    </center>
+
+</body>
+
+</html>
