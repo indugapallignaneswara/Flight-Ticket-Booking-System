@@ -25,10 +25,10 @@
   	printf("\t\nSELECT A DESIRED SERVICE-\n");
   	printf("1.RESERVATION OF SEATS\n");
   	printf("2.CANCELLATION OF SEATS/RE-SCHEDULING OF SEATS\n");
-  	printf("3.BOOKING DETAILS\n");
+  	printf("3.TO KNOW YOUR BOOKING DETAILS\n");
   	printf("4.RECORDS\n");
   	printf("5.EXIT\n");
-  	printf("\t\nENTER YOUR CHOICE-");
+  	printf("\t\n PLEASE ENTER YOUR CHOICE-");
   	scanf("%d",&ch1);
   }
   	switch (ch1)
