@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airline Booking System Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
+
+    header {
+      background-color: #e74c3c;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+
+    main {
+      margin: 20px;
+    }
+
+    #flight-search {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      margin-bottom: 20px;
+    }
+
+    #booking-history {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      width: 100px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="date"] {
+      width: 200px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button[type="submit"] {
+      background-color: #e74c3c;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #c0392b;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Airline Booking System Dashboard</h1>
+  </header>
+  <nav>
+  </nav>
+  <main>
+    <section id="flight-search">
+      <h2>Flight Search</h2>
+      <form>
+        <div class="form-group">
+          <label for="from">From:</label>
+          <input type="text" id="from" name="from" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="departure-date">Departure Date:</label>
+          <input type="date" id="departure-date" name="departure-date" required>
+        </div>
+
+        <div class="form-group">
+          <label for="to">To:</label>
+          <input type="text" id="to" name="to" required>
+        </div>
+        
+        <br> <!-- Add a line break here -->
+
+        <button type="submit">Search Flights</button>
+      </form>
+    </section>
+    <section id="booking-history">
+      <h2>Booking History</h2>
+      <ul>
+        <!-- Display booking history list here -->
+        <!-- Example: <li>Flight from [From] to [To] on [Departure Date]</li> -->
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Your Airline Name. All rights reserved.</p>
+  </footer>
+</body>
+</html>
