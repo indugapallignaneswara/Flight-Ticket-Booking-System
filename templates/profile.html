@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Personal Profile</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        table {
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        table td {
+            padding: 8px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 6px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        .file-upload-label {
+            display: inline-block;
+            padding: 6px 12px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .file-upload-label:hover {
+            background-color: #45a049;
+        }
+
+        #profile-photo {
+            max-width: 200px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Personal Profile</h1>
+    <table>
+        <tr>
+            <td>Profile Photo:</td>
+            <td>
+                <input type="file" id="fileInput" accept="image/*" onchange="displayPhoto(event)">
+                <label for="fileInput" class="file-upload-label">Choose Photo</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" id="name"></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" id="email"></td>
+        </tr>
+        <tr>
+            <td>Mobile Number:</td>
+            <td><input type="tel" id="mobile"></td>
+        </tr>
+        <tr>
+            <td>Address:</td>
+            <td><textarea id="address"></textarea></td>
+        </tr>
+    </table>
+    <button type="button" onclick="saveProfile()">Save Profile</button>
+
+    <!-- Sample space to display the uploaded profile photo -->
+    <div id="profile-photo">
+        <img id="profile-image" src="#" alt="Profile Photo">
+    </div>
+
+    <script>
+        function saveProfile() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var mobile = document.getElementById('mobile').value;
+            var address = document.getElementById('address').value;
+
+            // You can perform any necessary actions with the data here (e.g., saving it to a database).
+
+            alert("Profile saved successfully!");
+        }
+
+        function displayPhoto(event) {
+            var profileImage = document.getElementById('profile-image');
+            var selectedFile = event.target.files[0];
+            var reader = new FileReader();
+
+            reader.onload = function () {
+                profileImage.src = reader.result;
+            }
+
+            if (selectedFile) {
+                reader.readAsDataURL(selectedFile);
+            } else {
+                profileImage.src = '#'; // Clear the image if no file is selected
+            }
+        }
+    </script>
+</body>
+
+</html>
