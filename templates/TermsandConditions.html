@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Terms and Conditions</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        .terms {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .accept-checkbox {
+            margin-top: 20px;
+        }
+
+        .accept-checkbox label {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .accept-checkbox input[type="checkbox"] {
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        .submit-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Terms and Conditions</h1>
+        <div class="terms">
+            <p>Please read the following terms and conditions carefully before making a booking:</p>
+            <p>1. All bookings are subject to availability.</p>
+            <p>2. Prices and availability are subject to change without notice.</p>
+            <p>3. Payments are non-refundable.</p>
+            <p>4. Changes or cancellations to bookings may be subject to fees.</p>
+            <p>5. Passengers are responsible for valid travel documents and compliance with customs and immigration requirements.</p>
+            <p>6. We reserve the right to deny boarding to any passenger.</p>
+            <p>7. Passengers must follow all safety regulations and instructions from the airline's staff.</p>
+            <p>8. We are not liable for any loss, damage, or inconvenience caused during the journey.</p>
+            <p>9. By making a booking, you agree to these terms and conditions.</p>
+        </div>
+        <div class="accept-checkbox">
+            <label>
+                <input type="checkbox" required> I have read and agree to the terms and conditions above.
+            </label>
+        </div>
+        <button class="submit-button" onclick="confirmBooking()">Confirm Booking</button>
+    </div>
+
+    <script>
+        function confirmBooking() {
+            // Check if the user has accepted the terms and conditions before confirming the booking
+            if (document.querySelector('input[type="checkbox"]').checked) {
+                // Redirect the user to the confirmation page
+                window.location.href = "confirmation.html";
+            } else {
+                alert("Please accept the terms and conditions before proceeding with the booking.");
+            }
+        }
+    </script>
+</body>
+
+</html>
